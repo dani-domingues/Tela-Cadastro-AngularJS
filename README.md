@@ -93,4 +93,3 @@ O HTML usa diretivas do AngularJS para criar uma interface interativa:
 ## Melhorias Futuras
 Adicionar persistência de dados com Local Storage ou API backend.  
 Implementar validações mais avançadas nos formulários.  
-Substituir AngularJS por um framework mais moderno (Angular, React, ou Vue.js), já que AngularJS está descontinuado.

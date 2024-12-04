@@ -33,17 +33,17 @@
                 ];
 
                 $scope.adicionarClientes = function (cliente) {
-    // Adiciona o cliente preenchido no formulário à lista de clientes.
-    $scope.clientes.push(angular.copy(cliente)); // Cria uma cópia do objeto cliente.
-    delete $scope.cliente; // Limpa os campos do formulário após adicionar o cliente.
-};
+                    // Adiciona o cliente preenchido no formulário à lista de clientes.
+                    $scope.clientes.push(angular.copy(cliente)); // Cria uma cópia do objeto cliente.
+                    delete $scope.cliente; // Limpa os campos do formulário após adicionar o cliente.
+                };
 
-$scope.deletarClientes = function (clientes) {
-    // Filtra a lista de clientes, removendo os que foram selecionados.
-    $scope.clientes = clientes.filter(function (cliente) {
-        if (!cliente.selecionado) return cliente; // Retorna apenas os clientes não selecionados.
-    });
-};
+                $scope.deletarClientes = function (clientes) {
+                    // Filtra a lista de clientes, removendo os que foram selecionados.
+                    $scope.clientes = clientes.filter(function (cliente) {
+                        if (!cliente.selecionado) return cliente; // Retorna apenas os clientes não selecionados.
+                    });
+                };
 
                 $scope.temClienteSelecionado = function (clientes) {
                     return clientes.some(function (cliente) {
@@ -68,13 +68,12 @@ $scope.deletarClientes = function (clientes) {
         <input type="text" class="form-control" ng-model="Buscar" placeholder="Buscar cliente">
         <table class="table">
             <tr>
+                <th></th>
                 <th>Nome</th>
                 <th>Codigo</th>
                 <th>Tipo Clientes</th>
                 <th>Data Cadastro</th>
                 <th>Valor</th>
-
-
             </tr>
             <tr ng-class="{selecionado: cliente.selecionado, negrito: cliente.selecionado}"
                 ng-repeat="cliente in clientes | filter: Buscar | orderBy: 'nome'">

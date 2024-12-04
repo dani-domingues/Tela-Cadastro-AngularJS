@@ -1,13 +1,24 @@
+body {
+    background-image: url('imagem/blue-gradient-background-07xqmk2r9n9vmxli.jpg'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o corpo */
+    background-repeat: no-repeat; /* Evita repetição */
+    background-position: center; /* Centraliza a imagem */
+    margin: 0; /* Remove margens externas da página */
+    font-family: Arial, sans-serif; /* Define a fonte */
+
+}
 /* Centralizar a jumbotron e ajustar dimensões */
 .jumbotron {
     max-width: 90%; /* Responsividade: reduz em telas menores */
     width: 600px; 
     text-align: center;
     margin: 20px auto; /* Centraliza horizontalmente e adiciona margem superior */
-    background-color: #6c757d; /* Cor mais moderna */
+    background-color: rgba(255, 255, 255, 0.692); /* Fundo preto com 20% de transparência */
     padding: 20px; /* Padding uniforme */
     border-radius: 8px; /* Cantos arredondados */
-    color: #ffffff; /* Texto claro para contraste */
+    color: #4c4c4c; /* Texto claro para contraste */
+    border-radius: 8;
+
 }
 
 /* Ajustes na tabela */
@@ -15,17 +26,18 @@
     margin-top: 15px;
     width: 100%; /* Garante que a tabela ocupe toda a largura do container */
     text-align: left;
-    border-collapse: collapse; /* Remove espaços entre células */
+    border-radius: 8;
+    background-color: #f8f9fa;
 }
 
 .table th, .table td {
     padding: 10px; /* Espaçamento interno */
-    border: 1px solid #ccc; /* Bordas sutis */
 }
 
 .table th {
     background-color: #f8f9fa; /* Fundo leve para cabeçalhos */
     font-weight: bold;
+
 }
 
 /* Estilo dos campos de formulário */
@@ -34,12 +46,13 @@
     margin-left: auto;
     margin-right: auto;
     width: 90%; /* Ajuste responsivo */
-    max-width: 300px; /* Limite de largura */
+    max-width: 400px; /* Limite de largura */
+    border-radius:8;
 }
 
 /* Estilo para linhas selecionadas */
 .selecionado {
-    background-color: rgba(252, 103, 252, 0.4); /* Destaque com opacidade */
+    background-color: rgba(121, 10, 177, 0.467); /* Destaque com opacidade */
 }
 
 /* Texto em negrito */

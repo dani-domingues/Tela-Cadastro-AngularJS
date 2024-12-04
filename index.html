@@ -33,17 +33,17 @@
                 ];
 
                 $scope.adicionarClientes = function (cliente) {
-                    //$scope.clientes.push({nome:$scope.nome, codigo:$scope.codigo});
-                    $scope.clientes.push(angular.copy(cliente));
-                    delete $scope.cliente;
+    // Adiciona o cliente preenchido no formulário à lista de clientes.
+    $scope.clientes.push(angular.copy(cliente)); // Cria uma cópia do objeto cliente.
+    delete $scope.cliente; // Limpa os campos do formulário após adicionar o cliente.
+};
 
-                };
-
-                $scope.deletarClientes = function (clientes) {
-                    $scope.clientes = clientes.filter(function (cliente) {
-                        if (!cliente.selecionado) return clientes;
-                    });
-                };
+$scope.deletarClientes = function (clientes) {
+    // Filtra a lista de clientes, removendo os que foram selecionados.
+    $scope.clientes = clientes.filter(function (cliente) {
+        if (!cliente.selecionado) return cliente; // Retorna apenas os clientes não selecionados.
+    });
+};
 
                 $scope.temClienteSelecionado = function (clientes) {
                     return clientes.some(function (cliente) {

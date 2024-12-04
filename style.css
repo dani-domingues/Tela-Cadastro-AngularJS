@@ -27,7 +27,7 @@ body {
     width: 100%; /* Garante que a tabela ocupe toda a largura do container */
     text-align: left;
     border-radius: 8;
-    background-color: #f8f9fa;
+    background-color: #f8f9fac7;
 }
 
 .table th, .table td {
@@ -35,7 +35,7 @@ body {
 }
 
 .table th {
-    background-color: #f8f9fa; /* Fundo leve para cabeçalhos */
+    background-color: #f8f9facc; /* Fundo leve para cabeçalhos */
     font-weight: bold;
 
 }
@@ -65,7 +65,7 @@ body {
     text-align: center;
     margin-top: 20px;
     font-size: 14px;
-    color: #6c757d;
+    color: #310464;
 }
 
 /* Estilo para o alerta */

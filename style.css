@@ -1,0 +1,81 @@
+/* Centralizar a jumbotron e ajustar dimensões */
+.jumbotron {
+    max-width: 90%; /* Responsividade: reduz em telas menores */
+    width: 600px; 
+    text-align: center;
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona margem superior */
+    background-color: #6c757d; /* Cor mais moderna */
+    padding: 20px; /* Padding uniforme */
+    border-radius: 8px; /* Cantos arredondados */
+    color: #ffffff; /* Texto claro para contraste */
+}
+
+/* Ajustes na tabela */
+.table {
+    margin-top: 15px;
+    width: 100%; /* Garante que a tabela ocupe toda a largura do container */
+    text-align: left;
+    border-collapse: collapse; /* Remove espaços entre células */
+}
+
+.table th, .table td {
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Bordas sutis */
+}
+
+.table th {
+    background-color: #f8f9fa; /* Fundo leve para cabeçalhos */
+    font-weight: bold;
+}
+
+/* Estilo dos campos de formulário */
+.form-control {
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%; /* Ajuste responsivo */
+    max-width: 300px; /* Limite de largura */
+}
+
+/* Estilo para linhas selecionadas */
+.selecionado {
+    background-color: rgba(252, 103, 252, 0.4); /* Destaque com opacidade */
+}
+
+/* Texto em negrito */
+.negrito {
+    font-weight: bold;
+}
+
+/* Rodapé alinhado */
+.rodape {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Estilo para o alerta */
+.dir-alerta {
+    background-color: #f8d7da; /* Fundo com tom suave */
+    padding: 20px;
+    border-radius: 8px; /* Cantos arredondados */
+    margin: 20px 0; /* Espaçamento acima e abaixo */
+    border: 1px solid #f5c6cb; /* Bordas para definição */
+    color: #721c24; /* Texto em tom forte */
+}
+
+/* Título do alerta */
+.dir-alerta-title {
+    color: #721c24; /* Cor para manter consistência com o alerta */
+    font-weight: bold;
+    font-size: 18px; /* Um pouco menor para não dominar */
+    margin-bottom: 10px; /* Espaçamento abaixo */
+}
+
+/* Mensagem do alerta */
+.div-alerta-mensagem {
+    color: #721c24;
+    font-size: 14px;
+    line-height: 1.5; /* Melhor espaçamento entre linhas */
+}
